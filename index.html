@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LengthConverter  with javascript</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    label{
+        color: aliceblue;
+    }
+    p{
+        color: aliceblue;
+    }
+    #outputcm{
+        color: red;
+    }
+    #outputinch{
+        color: red;
+    }
+    #outputfeet{
+        color: red;
+    }
+    #outputmiles{
+        color: red;
+    }
+    #outputkilom{
+        color: red;
+    }
+</style>
+<body>
+    <div class="flex">
+        <label for="Meter">Meter</label>
+        <input type="number" placeholder="Meter" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+
+        <p>cm:</p> <span id="outputcm"></span>
+        <br>
+        <p>Inch:</p><span id="outputinch"></span>
+        <br>
+        <p>Feet:</p><span id="outputfeet"></span>
+        <br>
+        <p>Miles:</p><span id="outputmiles"></span>
+<br>
+<p>Kilometer:</p><span id="outputkilom"></span>
+
+    </div>
+</body>
+</html>
+<script src="length.js"></script>
